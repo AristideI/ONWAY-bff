@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bus_drivers",
+  "info": {
+    "singularName": "bus-driver",
+    "pluralName": "bus-drivers",
+    "displayName": "busDriver"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "bus_driver"
+    },
+    "route": {
+      "type": "json"
+    },
+    "busId": {
+      "type": "string"
+    }
+  }
+}
