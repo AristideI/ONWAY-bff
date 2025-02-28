@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buses",
+  "info": {
+    "singularName": "bus",
+    "pluralName": "buses",
+    "displayName": "bus"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "busId": {
+      "type": "string"
+    },
+    "from": {
+      "type": "json"
+    },
+    "to": {
+      "type": "json"
+    },
+    "bus_driver": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bus-driver.bus-driver",
+      "mappedBy": "bus"
+    }
+  }
+}

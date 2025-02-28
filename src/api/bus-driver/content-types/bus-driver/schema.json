@@ -4,7 +4,8 @@
   "info": {
     "singularName": "bus-driver",
     "pluralName": "bus-drivers",
-    "displayName": "busDriver"
+    "displayName": "busDriver",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,11 +18,11 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "bus_driver"
     },
-    "route": {
-      "type": "json"
-    },
-    "busId": {
-      "type": "string"
+    "bus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bus.bus",
+      "inversedBy": "bus_driver"
     }
   }
 }
