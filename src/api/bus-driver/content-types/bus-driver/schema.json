@@ -23,6 +23,12 @@
       "relation": "oneToOne",
       "target": "api::bus.bus",
       "inversedBy": "bus_driver"
+    },
+    "from": {
+      "type": "json"
+    },
+    "to": {
+      "type": "json"
     }
   }
 }
