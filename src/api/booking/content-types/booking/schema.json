@@ -37,6 +37,9 @@
     },
     "location2": {
       "type": "json"
+    },
+    "userLocation": {
+      "type": "json"
     }
   }
 }
